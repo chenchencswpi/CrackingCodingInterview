@@ -8,8 +8,20 @@ package arraysAndStrings;
  */
 public class StringRotation {
 
+	public static void main(String[] args) {
+		System.out.println(StringRotationSolution.isRotatedString("erbottlewat", "waterbottle"));
+	}
+	
 }
 
 class StringRotationSolution {
-	
+	/**
+	 * 
+	 * @param original
+	 * @param test
+	 * @return
+	 */
+	public static boolean isRotatedString(String original, String test) {
+		return (original + original).indexOf(test) != -1;
+	}
 }
